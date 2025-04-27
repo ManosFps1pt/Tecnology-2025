@@ -9,8 +9,8 @@ declare -A programs=(
     ["Python"]="python3 python.py" # sum_python.py
     ["Java"]="java java"
     ["CSharp"]="dotnet run --project CSharp"
-    ["C"]="./c.c"
-    ["C++"]="./cpp.cpp"
+    ["C"]="gcc c.c"
+    ["C++"]="cpp cpp.cpp"
 )
 
 # Colors
