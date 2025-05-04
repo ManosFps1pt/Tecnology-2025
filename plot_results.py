@@ -1,10 +1,16 @@
 import matplotlib.pyplot as plt
+from sys import argv
+
+try:
+    test_directory: str = argv[1]
+except IndexError:
+    test_directory: str = '' 
 
 # Read times from file
 languages = []
 times = []
 
-with open('times.txt', 'r') as f:
+with open(f'{test_directory}/times.txt', 'r') as f:
     for line in f:
         lang, time = line.strip().split()
         languages.append(lang)
@@ -24,5 +30,5 @@ for bar, time in zip(bars, times):
     plt.text(bar.get_x() + bar.get_width()/2, yval + 0.05, f'{time}', ha='center', va='bottom')
 
 # Save plot automatically (optional)
-plt.savefig('benchmark_results.png', dpi=300, bbox_inches='tight')  # Saves as PNG
+plt.savefig(f'{test_directory}benchmark_results.png', dpi=300, bbox_inches='tight')  # Saves as PNG
 plt.show()
