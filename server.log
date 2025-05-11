@@ -1,0 +1,88 @@
+/bin/sh: 1: /home/manos/projects/Tecnology-2025/reset.sh: Permission denied
+[34mRunning Python...[0ms is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.100:5000
+2025-05-11 19:41:49 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-11 19:41:49 [INFO]  * Restarting with stat
+2025-05-11 19:41:49 [WARNING]  * Debugger is active!
+2025-05-11 19:41:49 [INFO]  * Debugger PIN: 119-397-165
+2025-05-11 19:41:50 [INFO] 127.0.0.1 - - [11/May/2025 19:41:50] "GET /?id=f4e87db1-d6ab-446c-9a7e-b86a8661deed&vscodeBrowserReqId=1746992510008 HTTP/1.1" 200 -
+2025-05-11 19:41:52 [INFO] 127.0.0.1 - - [11/May/2025 19:41:52] "[32mPOST /reset HTTP/1.1[0m" 302 -
+2025-05-11 19:41:52 [INFO] 127.0.0.1 - - [11/May/2025 19:41:52] "GET / HTTP/1.1" 200 -
+2025-05-11 19:41:54 [INFO] 127.0.0.1 - - [11/May/2025 19:41:54] "[32mPOST /delete HTTP/1.1[0m" 302 -
+2025-05-11 19:41:54 [INFO] 127.0.0.1 - - [11/May/2025 19:41:54] "GET / HTTP/1.1" 200 -
+ [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]  [32m Done! (3.398s)[0m
+[34mRunning CSharp...[0m [|]   [/]  [32m Done! (.151s)[0m
+[34mRunning Java...[0m [|]  [32m Done! (.055s)[0m
+[34mRunning C...[0m [|]  [32m Done! (.038s)[0m
+[34mRunning C++...[0m [|]  [32m Done! (.048s)[0m
+
+[33mGenerating plot...[0m
+[32mPlot saved as benchmark_results.png.[0m
+
+[33mGenerating averages plot...[0m
+[32mPlot saved as averages.png.[0m
+
+[33mAll tasks completed.[0m
+2025-05-11 19:42:04 [INFO] 127.0.0.1 - - [11/May/2025 19:42:04] "[32mPOST /run HTTP/1.1[0m" 302 -
+2025-05-11 19:42:04 [INFO] 127.0.0.1 - - [11/May/2025 19:42:04] "GET / HTTP/1.1" 200 -
+[34mRunning Python...[0m [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]  [32m Done! (3.497s)[0m
+[34mRunning CSharp...[0m [|]   [/]   [-]  [32m Done! (.311s)[0m
+[34mRunning Java...[0m [|]   [/]  [32m Done! (.224s)[0m
+[34mRunning C...[0m [|]   [/]  [32m Done! (.187s)[0m
+[34mRunning C++...[0m [|]  [32m Done! (.057s)[0m
+
+[33mGenerating plot...[0m
+[32mPlot saved as benchmark_results.png.[0m
+
+[33mGenerating averages plot...[0m
+[32mPlot saved as averages.png.[0m
+
+[33mAll tasks completed.[0m
+2025-05-11 19:42:15 [INFO] 127.0.0.1 - - [11/May/2025 19:42:15] "[32mPOST /run HTTP/1.1[0m" 302 -
+2025-05-11 19:42:15 [INFO] 127.0.0.1 - - [11/May/2025 19:42:15] "GET / HTTP/1.1" 200 -
+2025-05-11 19:42:19 [INFO] 127.0.0.1 - - [11/May/2025 19:42:19] "GET /average HTTP/1.1" 200 -
+2025-05-11 19:42:20 [INFO] 127.0.0.1 - - [11/May/2025 19:42:20] "GET /download_average HTTP/1.1" 200 -
+2025-05-11 19:42:40 [INFO] 127.0.0.1 - - [11/May/2025 19:42:40] "GET / HTTP/1.1" 200 -
+2025-05-11 19:42:40 [INFO] 127.0.0.1 - - [11/May/2025 19:42:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[34mRunning Python...[0m [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]  [32m Done! (3.360s)[0m
+[34mRunning CSharp...[0m [|]   [/]  [32m Done! (.156s)[0m
+[34mRunning Java...[0m [|]  [32m Done! (.054s)[0m
+[34mRunning C...[0m [|]  [32m Done! (.037s)[0m
+[34mRunning C++...[0m [|]  [32m Done! (.047s)[0m
+
+[33mGenerating plot...[0m
+[32mPlot saved as benchmark_results.png.[0m
+
+[33mGenerating averages plot...[0m
+[32mPlot saved as averages.png.[0m
+
+[33mAll tasks completed.[0m
+2025-05-11 19:42:51 [INFO] 127.0.0.1 - - [11/May/2025 19:42:51] "[32mPOST /run HTTP/1.1[0m" 302 -
+2025-05-11 19:42:51 [INFO] 127.0.0.1 - - [11/May/2025 19:42:51] "GET / HTTP/1.1" 200 -
+2025-05-11 19:42:54 [INFO] 127.0.0.1 - - [11/May/2025 19:42:54] "GET /line HTTP/1.1" 200 -
+2025-05-11 19:42:55 [INFO] 127.0.0.1 - - [11/May/2025 19:42:55] "GET /download_line HTTP/1.1" 200 -
+2025-05-11 19:43:05 [INFO] 127.0.0.1 - - [11/May/2025 19:43:05] "[36mGET /download_line HTTP/1.1[0m" 304 -
+2025-05-11 19:43:18 [INFO] 127.0.0.1 - - [11/May/2025 19:43:18] "[36mGET /download_line HTTP/1.1[0m" 304 -
+2025-05-11 19:43:50 [INFO] 127.0.0.1 - - [11/May/2025 19:43:50] "GET /average HTTP/1.1" 200 -
+2025-05-11 19:43:51 [INFO] 127.0.0.1 - - [11/May/2025 19:43:51] "GET /download_average HTTP/1.1" 200 -
+2025-05-11 19:43:58 [INFO] 127.0.0.1 - - [11/May/2025 19:43:58] "GET /download HTTP/1.1" 200 -
+/bin/sh: 1: /home/manos/projects/Tecnology-2025/reset.sh: Permission denied
+2025-05-11 19:44:12 [INFO] 127.0.0.1 - - [11/May/2025 19:44:12] "[32mPOST /reset HTTP/1.1[0m" 302 -
+2025-05-11 19:44:13 [INFO] 127.0.0.1 - - [11/May/2025 19:44:13] "GET / HTTP/1.1" 200 -
+[34mRunning Python...[0m [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]   [\]   [|]   [/]   [-]  [32m Done! (3.394s)[0m
+[34mRunning CSharp...[0m [|]   [/]  [32m Done! (.155s)[0m
+[34mRunning Java...[0m [|]  [32m Done! (.051s)[0m
+[34mRunning C...[0m [|]  [32m Done! (.035s)[0m
+[34mRunning C++...[0m [|]  [32m Done! (.049s)[0m
+
+[33mGenerating plot...[0m
+[32mPlot saved as benchmark_results.png.[0m
+
+[33mGenerating averages plot...[0m
+[32mPlot saved as averages.png.[0m
+
+[33mAll tasks completed.[0m
+2025-05-11 19:44:24 [INFO] 127.0.0.1 - - [11/May/2025 19:44:24] "[32mPOST /run HTTP/1.1[0m" 302 -
+2025-05-11 19:44:24 [INFO] 127.0.0.1 - - [11/May/2025 19:44:24] "GET / HTTP/1.1" 200 -

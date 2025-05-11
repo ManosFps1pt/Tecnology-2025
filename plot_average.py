@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-from matplotlib.ticker import MaxNLocator
 from sys import argv
 
 try:
@@ -8,7 +7,7 @@ except IndexError:
     test_directory: str = '' 
 
 # Read times from file
-data = {
+data:dict[str, list[float]] = {
     'Python': [],
     'Java': [],
     'C++': [],
@@ -24,14 +23,22 @@ with open(f'{test_directory}/times.txt', 'r') as f:
         except ValueError:
             pass
 
-for key, values in data.items():
-    plt.plot(range(len(values)), values, label=key)
-plt.xlabel('Test Case')
+averages = [round(sum(i)/len(i), 3) for i in data.values() ]
+# Plot
+plt.figure(figsize=(10, 6))
+bars: plt.bar = plt.bar(data.keys(), averages, color='lightgreen')
+plt.xlabel('Programming Language')
 plt.ylabel('Time (seconds)')
 plt.title('Speed Comparison of Programming Languages')
-plt.legend()
-plt.grid()
-plt.gca().xaxis.set_major_locator(MaxNLocator(integer=True))
+plt.grid(axis='y')
+
+# Add labels
+for bar, time in zip(bars, averages):
+    yval = bar.get_height()
+    plt.text(bar.get_x() + bar.get_width()/2, yval + 0.05, f'{time}', ha='center', va='bottom')
+
+
+
 # Save plot automatically (optional)
-plt.savefig(f'{test_directory}benchmark_results.png', dpi=600, bbox_inches='tight')  # Saves as PNG
+plt.savefig(f'{test_directory}averages.png', dpi=600, bbox_inches='tight')  # Saves as PNG
 plt.show()

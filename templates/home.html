@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Benchmark Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px 16px;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        #loading {
+            display: none;
+            margin-top: 20px;
+            font-style: italic;
+            color: #555;
+        }
+        .button-danger {
+        background-color: #dc3545;
+        color: white;
+        }
+        .button-danger:hover {
+            background-color: #a71d2a;
+        }
+
+    </style>
+    <script>
+        function showLoading() {
+            document.getElementById('loading').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Programming Language Benchmarks</h1>
+
+    <table>
+        <thead>
+            <tr>
+                {% for header in headers %}
+                    <th>{{ header }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+                <tr>
+                    {% for cell in row %}
+                        <td>{{ cell }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <form action="/run" method="post" onsubmit="showLoading()">
+        <button type="submit" class="button">Run Benchmarks</button>
+    </form>
+
+    <form action="/download" method="get">
+        <button type="submit" class="button">Download CSV</button>
+    </form>
+    <form action="/line" method="get">
+        <button type="submit" class="button">Show line Graph</button>
+    </form>
+    <form action="/average" method="get">
+        <button type="submit" class="button">Show average Graph</button>
+    </form>
+    <form action="/delete" method="post">
+        <button type="submit" class="button button-danger">Delete All Measurements</button>
+    </form>
+        <form action="/reset" method="post">
+        <button type="submit" class="button button-danger">restart server</button>
+    </form>
+
+
+    <div id="loading">Running benchmarks... please wait ⏳</div>
+
+</body>
+</html>
