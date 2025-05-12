@@ -67,6 +67,10 @@ def home():
     # return render_template('table.html', headers=headers, rows=data)
 from flask import send_file
 
+@app.route("/md")
+def show_markdown():
+    return send_file("README.md")
+
 @app.route('/download')
 def download_csv():
     generate_csv()
@@ -95,6 +99,7 @@ def run_benchmark():
 
 @app.route('/reset', methods=['POST'])
 def reset():
+    print("--- RESETING ---")
     subprocess.run(RESET_SCRIPT, shell=True)
     return redirect(url_for('home'))
 
