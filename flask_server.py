@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, request
+from flask import Flask, render_template, redirect, url_for, request, send_file
 import subprocess
 import os
 import csv
@@ -65,11 +65,11 @@ def home():
     data = data[1:]
     return render_template('home.html', headers=headers, rows=data)
     # return render_template('table.html', headers=headers, rows=data)
-from flask import send_file
+
 
 @app.route("/md")
 def show_markdown():
-    return send_file("README.md")
+    return render_template("markdown.html")
 
 @app.route('/download')
 def download_csv():
